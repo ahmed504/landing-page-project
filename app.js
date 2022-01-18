@@ -54,18 +54,6 @@ for (section of sections) {
   fragment.appendChild(navItem);
 }
 navBar.appendChild(fragment);
-const icon = document.createElment('li');
-icon.innerHTML = '<a href="javascript:void(0);" class="icon" onclick="navIcon()"><i class="fa fa-bars"></i></a>';
-navBar.appendChild(icon);
-
-function navIcon() {
-  if (navBar.className === "navbar__list") {
-    navBar.className += " responsive";
-  }
-  else {
-    navBar.className = "navbar__list";
-  }
-}
 
 // Add class 'active' to section when near top of viewport
 
